@@ -2,21 +2,21 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
+import { getAnalytics } from 'firebase/analytics';
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDJ-1PGSmHqAyxDyHQpbxa4F20M6uK7680",
-  authDomain: "ramcoshine.firebaseapp.com",
-  projectId: "ramcoshine",
-  storageBucket: "ramcoshine.firebasestorage.app",
-  messagingSenderId: "914314014574",
-  appId: "1:914314014574:web:0c72aea2a5632357629b7f",
-  measurementId: "G-1CZTMWXW7E"
+  apiKey: "AIzaSyCzXcyyQenxV0KavUXLaQA21sx4PyjBkQg",
+  authDomain: "ramco-shine.firebaseapp.com",
+  projectId: "ramco-shine",
+  storageBucket: "ramco-shine.firebasestorage.app",
+  messagingSenderId: "630229796934",
+  appId: "1:630229796934:web:4eacb26f73e7c911046247",
+  measurementId: "G-11VZPX8E3Z"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+export const analytics = getAnalytics(app);
 
 // Initialize Firebase services
 export const auth = getAuth(app);

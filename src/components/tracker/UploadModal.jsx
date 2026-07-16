@@ -57,7 +57,7 @@ export default function UploadModal({ isOpen, onClose, zone, month, year, onSucc
       resetAndClose();
     } catch (err) {
       console.error(err);
-      setError('An unexpected error occurred while saving the link.');
+      setError(`Error: ${err.message || 'An unexpected error occurred while saving the link.'}`);
       setIsUploading(false);
     }
   };
